@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CR Emote Cam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body tabindex="0">
+
+  <header>
+    <h1>🎮 CR Emote Camera</h1>
+    <p>Real-time emotes based on your actions</p>
+  </header>
+
+  <main>
+    <!-- LEFT: CAMERA -->
+    <div class="panel camera-panel">
+      <video id="camera" autoplay muted></video>
+    </div>
+
+    <!-- RIGHT: EMOTE DISPLAY -->
+    <div class="panel emote-panel">
+      <img id="emote" class="emote" style="display:none;">
+    </div>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
